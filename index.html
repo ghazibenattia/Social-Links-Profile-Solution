@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures the site displays properly across different devices -->
+
+  <!-- Font Preconnect for faster loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Link to Google Fonts to import 'Inter' font family -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
+
+  <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- External CSS File -->
   <link rel="stylesheet" href="style.css">
 
-  <title>Frontend Mentor | Social links profile</title>
+  <title>Frontend Mentor | Social Links Profile</title>
 </head>
+
 <body>
+  <!-- Main container for the profile card -->
   <main id="container">
+    <!-- Avatar Section -->
     <div class="avatar">
+      <!-- Profile Image -->
       <img src="assets/images/avatar-jessica.jpeg" alt="Profile Picture" class="avatar-img">
     </div>
-        <div class="name">
-          <h1>Jessica Randall</h1>
-        </div>
-        <div class="location">
-          <h2>London, United Kingdom</h2>
-        </div>
-        <div class="description">  
-            <p>"Front-end developer and avid reader."</p>
-        </div>
-        <div class="links">    
-            <ul>
-              <p> GitHub</p>
-              <p>Frontend Mentor</p>
-              <p>LinkedIn</p>
-              <p>Twitter</p>
-              <p>Instagram</p>
-            </ul>
-        </div>
+
+    <!-- Name Section -->
+    <div class="name">
+      <h1>Jessica Randall</h1>
+    </div>
+
+    <!-- Location Section -->
+    <div class="location">
+      <p>London, United Kingdom</p>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description">
+      <p>"Front-end developer and avid reader."</p>
+    </div>
+
+    <!-- Links Section -->
+    <div class="links">
+      <ul>
+        <!-- Social Media Links (Buttons) -->
+        <li><button>GitHub</button></li>
+        <li><button>Frontend Mentor</button></li>
+        <li><button>LinkedIn</button></li>
+        <li><button>Twitter</button></li>
+        <li><button>Instagram</button></li>
+      </ul>
+    </div>
   </main>
-  
+
+  <!-- Attribution Section for the Challenge -->
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/ghazibenattia">Ghazi Benattia</a>.
   </div>
 </body>
+
 </html>

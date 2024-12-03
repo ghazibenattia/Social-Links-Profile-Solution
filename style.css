@@ -1,58 +1,179 @@
-*{
+/* Importing the 'Inter' font family from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    /* Applying the 'Inter' font globally */
 }
+
+/* Body Styles */
 body {
     background-color: hsl(0, 0%, 8%);
+    /* Dark background for the body */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    /* Full height for centering the content */
 }
+
+/* Main Container Styles */
 #container {
-    width: 384px;
-    height: 565px;
+    width: 400px;
+    height: 615px;
     background-color: hsl(0, 0%, 12%);
+    /* Dark background for the card */
     border-radius: 10px;
     text-align: center;
+    /* Center text inside the container */
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
-.avatar img{
-    height: 5.2rem;
+
+/* Avatar Image Styles */
+.avatar img {
+    height: 5.1rem;
+    /* Size of the avatar image */
     border-radius: 50%;
+    /* Make the image circular */
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    /* Spacing below the image */
+    margin-top: 1.5rem;
+    /* Spacing above the image */
 }
+
+/* Name Styles */
 .name h1 {
     color: hsl(0, 0%, 100%);
+    /* White color for the name */
+    font-size: 1.7rem;
+    /* Font size for the name */
+    font-weight: 500;
+    /* Medium font weight */
+    font-style: normal;
+    /* Ensure the font is not italic */
 }
-.location h2 {
+
+/* Location Styles */
+.location p {
     margin-top: 0.5rem;
+    /* Space above the location text */
     color: hsl(75, 94%, 57%);
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-.description {
+    /* Greenish color for the location */
+    font-size: 0.870rem;
+    /* Smaller font size for location */
     margin-bottom: 1rem;
+    /* Spacing below the location */
+    font-weight: 600;
+    /* Bold weight for the location text */
 }
+
+/* Description Styles */
+.description {
+    margin-bottom: 0.2rem;
+    /* Small margin below the description */
+}
+
 .description p {
     color: hsla(0, 0%, 100%, 0.74);
-    font-size: 0.8rem;
+    /* Semi-transparent white color for description */
+    font-size: 0.9rem;
+    /* Font size for the description */
 }
-.links p {
-    color: hsl(0, 0%, 100%);
-    padding: 1rem;
-    background-color: hsl(0, 0%, 20%);
-}
-.attribution {
-      font-size: 11px;
-      text-align: center;
-  }
 
-  .attribution a {
-      color: hsl(228, 45%, 44%);
-  }
+/* Links Container Styles */
+.links {
+    padding: 20px;
+}
+
+/* Styling the List of Social Links (Buttons) */
+.links ul {
+    list-style-type: none;
+    /* Removes default list bullets */
+    gap: 0.2rem;
+    /* Small gap between buttons */
+    display: grid;
+    /* Using grid for layout */
+}
+
+/* Button Styles inside Links */
+.links button {
+    color: hsl(0, 0%, 100%);
+    /* White text color */
+    width: 100%;
+    /* Full width for the buttons */
+    max-width: 400px;
+    /* Maximum width for buttons */
+    padding: 1rem;
+    /* Padding inside the buttons */
+    background-color: hsl(0, 0%, 20%);
+    /* Dark background for buttons */
+    margin: 7px;
+    /* Margin around each button */
+    border-radius: 0.7rem;
+    /* Rounded corners for the buttons */
+    align-items: center;
+    /* Aligning items inside the button */
+    justify-content: center;
+    /* Center content inside the button */
+    list-style-type: none;
+    /* Ensures no list styling */
+    border: none;
+    /* Remove default border */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    text-align: center;
+    /* Center text inside the button */
+    box-sizing: border-box;
+    /* Include padding in button's total width/height */
+    outline: none;
+    /* Remove outline on focus */
+    font-size: 1rem;
+    /* Font size for the button text */
+    font-weight: 500;
+    /* Medium font weight */
+    justify-content: space-evenly;
+    /* Even spacing for button content */
+}
+
+/* Button Hover Effect */
+.links button:hover {
+    background-color: hsl(75, 94%, 57%);
+    /* Change to greenish background on hover */
+    color: hsl(0, 0%, 8%);
+    /* Change text color for contrast */
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 500px) {
+    #container {
+        width: 90%;
+        /* Container width adjusts to 90% on smaller screens */
+        margin: 2rem auto;
+        /* Margin for centering and spacing */
+    }
+}
+
+/* Attribution Section Styles */
+.attribution {
+    font-size: 12px;
+    /* Small font size for attribution */
+    text-align: center;
+    /* Center the attribution text */
+    margin-top: 1rem;
+    /* Space above the attribution */
+    color: hsl(0, 0%, 100%);
+    /* White color for the attribution */
+}
+
+/* Attribution Link Styles */
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    /* Blue color for attribution links */
+}
