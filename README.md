@@ -1,4 +1,4 @@
-# Frontend Mentor - QR code component solution by Ghazi Benattia
+# Frontend Mentor - Social Links Profile solution by Ghazi Benattia
 This is a solution to the [Social Links Profile Challenge](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 ***
